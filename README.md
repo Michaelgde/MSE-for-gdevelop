@@ -6,3 +6,4 @@ It saves keys you mapped in  json files which with the json to variable extensio
 Plugins are third party features that can be added to MSE.
 They are written using JavaScript with a library called GDJS(gdevelop Javascript).
 visit here for documentation on GDJS https://docs.gdevelop.io/GDJS%20Runtime%20Documentation/modules/gdjs.html
+To publish a plugin reach out to me at my discord server https://discord.gg/BqMsVZ2mR8
