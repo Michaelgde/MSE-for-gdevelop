@@ -2,21 +2,21 @@
 
 if(keyPressed.getAsString() === 'Left'){
    createNode(96)
-   runtimeScene.getObject('music_container')[runtimeScene.getObjects('music_container').length-1].getVariable().get('data').setString('left')
    keyPressed.setString('')
+   runtimeScene.getObject('music_container')[runtimeScene.getObjects('music_container').length-1].getVariable().get('data').setString('left')
 }
 if(keyPressed.getAsString() === 'Down'){
    createNode(192)
-   runtimeScene.getObject('music_container')[runtimeScene.getObjects('music_container').length-1].getVariable().get('data').setString('down')
    keyPressed.setString('')
+   runtimeScene.getObject('music_container')[runtimeScene.getObjects('music_container').length-1].getVariable().get('data').setString('down')
 }
 if(keyPressed.getAsString() === 'Up'){
    createNode(288)
-   runtimeScene.getObject('music_container')[runtimeScene.getObjects('music_container').length-1].getVariable().get('data').setString('up')
    keyPressed.setString('')
+   runtimeScene.getObject('music_container')[runtimeScene.getObjects('music_container').length-1].getVariable().get('data').setString('up')
 }
 if(keyPressed.getAsString() === 'Right'){
    createNode(384)
-   runtimeScene.getObject('music_container')[runtimeScene.getObjects('music_container').length-1].getVariable().get('data').setString('right')
    keyPressed.setString('')
+   runtimeScene.getObject('music_container')[runtimeScene.getObjects('music_container').length-1].getVariable().get('data').setString('right')
 }
