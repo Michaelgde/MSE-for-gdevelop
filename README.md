@@ -15,25 +15,25 @@ To publish a plugin reach out to me at my discord server https://discord.gg/BqMs
 * script is a great tool for devs trying to make MSE better it can execute scripts written in javascript mainly GDJS
 
 # Pros and cons of the HTML and Desktop💻 version of MSE
--HTML-
-PROS-
+# HTML
+# PROS- of HTML
 1. It is light
 2. It is secure if used on the rigth browser like chrome, brave and firefox
 3. no need to download updates
 4. Can run on multiple OS
-CONS-
+# CONS- of HTML
 1. It can be laggy if size of all the projects together is larger than available RAM
 2. It can be buggy due the fact it can be uploaded without bug discovery by development team
 3. Not recommened for insecure browsers
 
--Desktop-
-PROS-
+# Desktop
+# PROS of Desktop
 1. It is fast
 2. It is more stable
 3. You can always install an older version
 4. Works well with javascript
 5. Dosen't need an internet connection
-CONS-
+# CONS
 1. A bit heavy
 2. You might need to update if a new recommended version is out
 3. Not secure if you install plugins outside from the store
