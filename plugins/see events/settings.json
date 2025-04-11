@@ -17,7 +17,7 @@
   },
   "b":{
     "type":"num_input",
-    "text":"B"
+    "text":"B",
     "max":255,
     "min":0
   }
