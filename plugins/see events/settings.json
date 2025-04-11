@@ -1,0 +1,24 @@
+{
+  "costom colour":{
+    "type":"bool",
+    "text":"costom colour"
+  }
+  "r":{
+    "type":"num_input",
+    "text":"R",
+    "max":255,
+    "min":0
+  },
+  "g":{
+    "type":"num_input",
+    "text":"G",
+    "max":255,
+    "min":0
+  },
+  "b":{
+    "type":"num_input",
+    "text":"B"
+    "max":255,
+    "min":0
+  }
+}
