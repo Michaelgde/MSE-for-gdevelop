@@ -2,7 +2,7 @@
   "costom colour":{
     "type":"bool",
     "text":"costom colour"
-  }
+  },
   "r":{
     "type":"num_input",
     "text":"R",
