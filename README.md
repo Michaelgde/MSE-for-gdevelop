@@ -1,40 +1,65 @@
-# MSE (Music Sheet Editor) for gdevelop Documentation
-# About
-MSE is a music mapper for gdevelop use to track and key beats in an audio/music it can be used for making FNF, Geometry dash, Guitar hero and much more rythm games.
-It saves keys you mapped in  json files which with the json to variable extension in gdevelop can be converted to a array/structure variable
-# plugins
-Plugins are third party features that can be added to MSE.
-They are written using JavaScript with a library called GDJS(gdevelop Javascript).
-visit here for documentation on GDJS https://docs.gdevelop.io/GDJS%20Runtime%20Documentation/modules/gdjs.html
-To publish a plugin reach out to me at my discord server https://discord.gg/BqMsVZ2mR8
-# How to use mse
-* press c to create key at grid the cursor is at, the grid represents the bpm where a each grid can be a beat
-* The long line that moves as the music/audio is played is called TA(time of audio) this graphically represent when a key is reached or when note is played or when an event can be triggered in the audio
-* You can export your project as an array but it is only usefull if you just need only the time a note/key is reached/played or if you just need the x position of a key this helps to reduce size of json
-* You can export your project as a structure this export all data like time/x position, y position and events
-* script is a great tool for devs trying to make MSE better it can execute scripts written in javascript mainly GDJS
+# MSE (Music Sheet Editor) for GDevelop
 
-# Pros and cons of the HTML and Desktop💻 version of MSE
-# HTML
-* PROS- of HTML
-1. It is light
-2. It is secure if used on the rigth browser like chrome, brave and firefox
-3. no need to download updates
-4. Can run on multiple OS
-* CONS- of HTML
-1. It can be laggy if size of all the projects together is larger than available RAM
-2. It can be buggy due the fact it can be uploaded without bug discovery by development team
-3. Not recommened for insecure browsers
+## About
 
-# Desktop
-* PROS of Desktop
-1. It is fast
-2. It is more stable
-3. You can always install an older version
-4. Works well with javascript
-5. Dosen't need an internet connection
-* CONS
-1. A bit heavy
-2. You might need to update if a new recommended version is out
-3. Not secure if you install plugins outside from the store
+MSE is a music mapping tool for GDevelop designed to track and key beats in audio/music. It’s particularly useful for creating rhythm games like **Friday Night Funkin' (FNF)**, **Geometry Dash**, **Guitar Hero**, and other similar games.
+
+MSE saves the keys you map in JSON files. These files can be converted into an array/structure variable in GDevelop using the "JSON to Variable" extension.
+
+## Plugins
+
+Plugins are third-party features that extend the functionality of MSE. Plugins are written in JavaScript using the **GDJS** (GDevelop JavaScript) library.
+
+For documentation on **GDJS**, visit:  
+[GDJS Documentation](https://docs.gdevelop.io/GDJS%20Runtime%20Documentation/modules/gdjs.html)
+
+For comprehensive documentation on creating plugins, visit the wiki:  
+[MSE Plugin Documentation](https://github.com/Michaelgde/music-sheet/wiki)
+
+If you'd like to publish a plugin, please reach out to me via my [Discord server](https://discord.gg/BqMsVZ2mR8).
+
+---
+
+## How to Use MSE
+
+1. **Creating Keys**: Press **C** to create a key at the current position on the grid. The grid represents the beats per minute (BPM) where each grid line corresponds to a beat.
+2. **TA (Time of Audio)**: The long moving line in the editor represents the **Time of Audio (TA)**. It graphically indicates when a key is reached, a note is played, or when an event can be triggered in sync with the audio.
+3. **Exporting Data**:
+   - **Array Export**: You can export your project as an array. This format is useful if you only need the time when a note/key is reached or the X position of a key, which helps to reduce the size of the JSON file.
+   - **Structure Export**: You can export your project as a structure. This format includes all data such as time, X position, Y position, and events.
+4. **Scripts**: Developers can use the **Script** feature to run custom JavaScript, mainly using GDJS. This allows further customization and improvement of MSE.
+
+---
+
+## Pros and Cons of the HTML and Desktop Versions of MSE
+
+### HTML Version
+
+**PROS:**
+1. Lightweight and easy to use.
+2. Secure when run on reliable browsers like **Chrome**, **Brave**, or **Firefox**.
+3. No need to download updates, as everything is updated automatically.
+4. Can run on multiple operating systems without installation.
+
+**CONS:**
+1. Can be laggy if the size of the projects exceeds the available RAM.
+2. May contain bugs due to the potential lack of proper testing before upload.
+3. Not recommended for use with insecure or outdated browsers.
+
+---
+
+### Desktop Version
+
+**PROS:**
+1. Faster performance and more stable.
+2. Allows you to install an older version if needed.
+3. Works seamlessly with JavaScript and GDJS.
+4. Does not require an internet connection to function.
+
+**CONS:**
+1. Heavier on system resources.
+2. You may need to update the application when a new recommended version is released.
+3. Less secure if plugins are installed from unofficial or untrusted sources.
+
+---
 
