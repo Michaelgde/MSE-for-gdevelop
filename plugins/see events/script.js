@@ -6,3 +6,10 @@ if(runtimeScene.getOnceTriggers().triggerOnce(1)){
 runtimeScene.getObjects('music_container').forEach(obj=>{if(gdjs.RuntimeObject.collisionTest(obj,runtimeScene.getObjects('play_node')[0],true)){
     runtimeScene.getObjects('event_display')[0].setString(obj.getVariables().get('data').getAsString())
 }})
+
+if(getSetting('see','costom colour')){
+    var Re = getSetting('see','r')
+    var Ge = getSetting('see','g')
+    var Be = getSetting('see','b')
+    runtimeScene.getObjects('event_display')[0].setColor(Re+";"+Ge+";"+Be)
+}
