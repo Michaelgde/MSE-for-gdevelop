@@ -7,9 +7,9 @@ runtimeScene.getObjects('music_container').forEach(obj=>{if(gdjs.RuntimeObject.c
     runtimeScene.getObjects('event_display')[0].setString(obj.getVariables().get('data').getAsString())
 }})
 
-if(getSetting('see','costom colour')){
-    var Re = getSetting('see','r')
-    var Ge = getSetting('see','g')
-    var Be = getSetting('see','b')
+if(getSetting('see events','costom colour')){
+    var Re = getSetting('see events','r')
+    var Ge = getSetting('see events','g')
+    var Be = getSetting('see events','b')
     runtimeScene.getObjects('event_display')[0].setColor(Re+";"+Ge+";"+Be)
 }
