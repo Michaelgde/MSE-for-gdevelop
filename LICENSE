@@ -1,4 +1,12 @@
-Copyright (c) 2025 Michaelgde
+Copyright © 2025 Michaelgde
 
-MSE and it's related trade marks and logo are under the copyright of Michaelgde.
-The LICENSE of MSE plugins will be given in their speicified folder. If a plugin doesnt provide a license, then it doesn't mean that it's free to use.
+MSE, including its associated trademarks and logo, is the intellectual property of Michaelgde.
+
+Each MSE plugin must include a license file within its respective folder. If a plugin does not provide a license, this does not imply that it is free to use. Users and developers are responsible for ensuring they have the appropriate rights to use or distribute any plugin.
+
+By developing or using a plugin for MSE, you acknowledge and agree to the following:
+- Plugins provided by the MSE development team are reviewed and supported, but MSE is not responsible for any licensing issues or legal claims related to these plugins.
+- Unofficial or third-party plugins are plugins that are not provided by the official MSE GitHub repository (https://github.com/Michaelgde/MSE-for-gdevelop/) or are not developed, maintained, or supported by the MSE development team. These plugins are used at the user's own risk. The MSE team does not assume responsibility for any issues arising from the use of unofficial plugins, including but not limited to incompatibility, malfunction, or security risks.
+- All responsibility for plugin behavior, maintenance, and compliance lies solely with the plugin's developer.
+
+Use unofficial plugins (plugins not provided by the official GitHub repository: https://github.com/Michaelgde/MSE-for-gdevelop/) at your own risk.
