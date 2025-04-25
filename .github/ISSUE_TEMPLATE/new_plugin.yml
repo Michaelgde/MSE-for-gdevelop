@@ -39,7 +39,7 @@ body:
     id: plugin-link
     attributes:
       label: Plugin Repository or Download Link
-      description: Link to the source code or plugin download.
+      description: Link to the source code or plugin download (in .zip format).
       placeholder: https://github.com/your/plugin
 
   - type: dropdown
