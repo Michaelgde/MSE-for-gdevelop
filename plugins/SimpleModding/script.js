@@ -1,4 +1,12 @@
 // ----------------------------------------------------
+// Simple CONFIGS
+// ----------------------------------------------------
+
+window.runtimeScene = runtimeScene;
+window.gdjs = gdjs;
+
+
+// ----------------------------------------------------
 // Simple API
 // ----------------------------------------------------
 
@@ -43,7 +51,7 @@ const simplemod = () => {
     });
   };
 
-  function changeImageTexture(spriteName, base64DataURI, recursive) {
+  const changeImageTexture = (spriteName, base64DataURI, recursive) => {
     const image = new Image();
     image.onload = () => {
       const texture = new PIXI.Texture(new PIXI.BaseTexture(image));
@@ -67,12 +75,87 @@ const simplemod = () => {
       console.error("Failed to load texture:", e);
     };
     image.src = base64DataURI;
-  }
+  };
+
+  const spritePosition = (spriteName, x, y, recursive) => {
+    const sprite = recursive
+      ? runtimeScene.getObjects(spriteName)
+      : [runtimeScene.getObjects(spriteName)[0]];
+    if (sprite) {
+      sprite.setX(x);
+      sprite.setY(y);
+    }
+  };
+
+  const getVariable = (varName, global, nested) => {
+    let variable = "";
+
+    if (nested) {
+      if (global) {
+        const parts = varName.split(".");
+        variable = runtimeScene.getGame().getVariables().get(parts[0]);
+        for (let i = 1; i < parts.length; i++) {
+          variable = variable.getChild(parts[i]);
+        }
+      } else {
+        const parts = varName.split(".");
+        variable = runtimeScene.getVariables().get(parts[0]);
+        for (let i = 1; i < parts.length; i++) {
+          variable = variable.getChild(parts[i]);
+        }
+      }
+    } else {
+      if (global) {
+        variable = runtimeScene.getGame().getVariables().get(varName);
+      } else {
+        variable = runtimeScene.getVariables().get(varName);
+      }
+    }
+    return variable;
+  };
+
+  const setVariable = (varName, value, global, nested) => {
+    let variable = "";
+
+    if (nested) {
+      if (global) {
+        const parts = varName.split(".");
+        variable = runtimeScene.getGame().getVariables().get(parts[0]);
+        for (let i = 1; i < parts.length; i++) {
+          variable = variable.getChild(parts[i]);
+        }
+      } else {
+        const parts = varName.split(".");
+        variable = runtimeScene.getVariables().get(parts[0]);
+        for (let i = 1; i < parts.length; i++) {
+          variable = variable.getChild(parts[i]);
+        }
+      }
+
+    } else {
+      if (global) {
+        variable = runtimeScene.getGame().getVariables().get(varName);
+      } else {
+        variable = runtimeScene.getVariables().get(varName);
+      }
+    }
+    if (typeof value === "number") {
+      variable.setNumber(value);
+    } else if (typeof value === "string") {
+      variable.setString(value);
+    } else if (typeof value === "boolean") {
+      variable.setBoolean(value);
+    }
+  };
+
 
   return {
     createIframe,
     playAudio,
     changeImageTexture,
+    spritePosition,
+    getVariable,
+    setVariable,
   };
 };
 
