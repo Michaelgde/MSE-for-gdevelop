@@ -6,7 +6,7 @@ Each MSE plugin must include a license file within its respective folder. If a p
 
 By developing or using a plugin for MSE, you acknowledge and agree to the following:
 - Plugins provided by the MSE development team are reviewed and supported, but MSE is not responsible for any licensing issues or legal claims related to these plugins.
-- Unofficial or third-party plugins are plugins that are not provided by the official MSE GitHub repository (https://github.com/Michaelgde/MSE-for-gdevelop/) or are not developed, maintained, or supported by the MSE development team. These plugins are used at the user's own risk. The MSE team does not assume responsibility for any issues arising from the use of unofficial plugins, including but not limited to incompatibility, malfunction, or security risks.
+- Unofficial or third-party plugins are plugins that are not provided by the official MSE GitHub repository (https://github.com/Michaelgde/MSE-for-gdevelop/) or are not developed, maintained, or supported by the MSE development team. These plugins should be used at the user's own risk. The MSE team does not assume responsibility for any issues arising from the use of unofficial plugins, including incompatibility, malfunction, or security risks.
 - All responsibility for plugin behavior, maintenance, and compliance lies solely with the plugin's developer.
 
 Use unofficial plugins (plugins not provided by the official GitHub repository: https://github.com/Michaelgde/MSE-for-gdevelop/) at your own risk.
