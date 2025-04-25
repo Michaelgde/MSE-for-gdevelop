@@ -1,0 +1,74 @@
+name: Bug Report
+description: Report a bug or unexpected behavior in the project.
+title: "[Bug]: "
+labels: ["bug"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug! Please provide as much detail as possible so we can investigate.
+
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: What system or environment are you using?
+      placeholder: e.g., Windows 11, macOS 14, Ubuntu 22.04, Browser name/version
+    validations:
+      required: true
+
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: What happened?
+      description: Describe the bug clearly.
+      placeholder: A clear and concise description of what the bug is.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: Tell us how to reproduce the issue.
+      placeholder: |
+        1. Open the app...
+        2. Click on...
+        3. Observe...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What did you expect to happen?
+      placeholder: Describe what you thought should happen.
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Screenshots / Logs
+      description: Attach any screenshots or log output that might help.
+      placeholder: Drag and drop images or paste error logs here.
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      description: How severe is this issue?
+      options:
+        - Low (minor bug, no real impact)
+        - Medium (affects usability but not a blocker)
+        - High (blocks key features or causes crashes)
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Information
+      description: Anything else you’d like to share?
+      placeholder: Any workarounds, related issues, or context?
