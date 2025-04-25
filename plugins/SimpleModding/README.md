@@ -103,3 +103,45 @@ smplmod.changeImageTexture(
   true
 );
 ```
+
+
+### `smplmod.getVariable(variableName: string, global: boolean, recursive: boolean)`
+
+**Description:**
+Return's a variable from GDevelop. If `global` is `true`, it will search for the global variables in GDevelop; If `false` or argument not provided, it would search for the scene variable.. If `recursive` is `true`, it will search for children of the variable; if `false` or argument not provided, it would directly search for the variable name.
+
+**Parameters:**
+
+- `variableName` (string): The name of the variable to search.
+- `global` (boolean): Whether to search GDevelop global variable (`true`) or Scene variable (`false`).
+- `recursive` (boolean): Whether to search for children of the variable (variable should be provided in `variableName.childName` format for recursive to work) (`true`) or just search the variable name directly (`false`).
+
+**Example:**
+
+```js
+console.log(smplmod.getVariable("data.plugins", true, true)); // logs the plugins `child` of `data`
+console.log(smplmod.getVariable("data", true)); // logs the variable `data`
+```
+```
+```
+
+### `smplmod.setVariable(variableName: string, value: any, global: boolean, recursive: boolean)`
+
+**Description**:
+Overwrites a variable value in GDevelop. If `global` is `true`, it will search for the global variables in Gdevelop; If `false` or argument not provided, it would search for the scene variable. If `recursive` is `true`, it will search for children of the variable; if `false` or argument not provided, it would directly search for the variable name.
+
+**Parameters:**
+
+- `variableName` (string): The name of the variable to search.
+- `value` (any): The value to set can be in any format (boolean, number or string). This is the value that the variables data will be replaced with.
+- `global` (boolean): Whether to search GDevelop global variable (`true`) or Scene variable (`false`).
+- `recursive` (boolean): Whether to search for children of the variable (variable should be provided in `variableName.childName` format for recursive to work) (`true`) or just search the variable name directly (`false`).
+
+**Example:**
+
+```js
+smplmod.setVariable("example", "examplText", true); // if the example global variable exists, its value will change to `exampleText` and if it doesn't exist, it will be created.
+smplmod.setVariable("example.childVar", "childValue", true); // the `example` global variable will automatically be set as a structure and its child variable `childVar` will be set to the "childValue"
+```
+```
+```
