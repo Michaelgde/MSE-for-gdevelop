@@ -1,0 +1,64 @@
+name: New Plugin
+description: Suggest a new plugin to improve MSE capabilities.
+title: "[New Plugin]: "
+labels: ["New Plugin"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for contributing! Please fill out the details below to propose a new plugin.
+
+  - type: input
+    id: plugin-name
+    attributes:
+      label: Plugin Name
+      description: What's the name of your plugin?
+      placeholder: e.g., AdvancedAudioController
+    validations:
+      required: true
+
+  - type: textarea
+    id: plugin-description
+    attributes:
+      label: Plugin Description
+      description: What does this plugin do? Why is it useful? How can we use this?
+      placeholder: Provide a clear and concise explanation.
+    validations:
+      required: true
+
+  - type: input
+    id: plugin-author
+    attributes:
+      label: Plugin Author
+      description: Who developed or maintains this plugin?
+      placeholder: GitHub handle or name
+
+  - type: input
+    id: plugin-link
+    attributes:
+      label: Plugin Repository or Download Link
+      description: Link to the source code or plugin download.
+      placeholder: https://github.com/your/plugin
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      description: What type of plugin is this?
+      options:
+        - Audio
+        - Video
+        - UI Enhancement
+        - Tools
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-notes
+    attributes:
+      label: Additional Notes
+      description: Anything else you’d like to mention?
+      placeholder: e.g., known issues, future plans, dependencies, etc.
