@@ -122,8 +122,6 @@ Return's a variable from GDevelop. If `global` is `true`, it will search for the
 console.log(smplmod.getVariable("data.plugins", true, true)); // logs the plugins `child` of `data`
 console.log(smplmod.getVariable("data", true)); // logs the variable `data`
 ```
-```
-```
 
 ### `smplmod.setVariable(variableName: string, value: any, global: boolean, recursive: boolean)`
 
