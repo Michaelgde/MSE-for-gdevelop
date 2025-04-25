@@ -143,5 +143,3 @@ Overwrites a variable value in GDevelop. If `global` is `true`, it will search f
 smplmod.setVariable("example", "examplText", true); // if the example global variable exists, its value will change to `exampleText` and if it doesn't exist, it will be created.
 smplmod.setVariable("example.childVar", "childValue", true); // the `example` global variable will automatically be set as a structure and its child variable `childVar` will be set to the "childValue"
 ```
-```
-```
