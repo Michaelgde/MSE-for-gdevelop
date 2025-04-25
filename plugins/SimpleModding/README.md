@@ -123,7 +123,7 @@ console.log(smplmod.getVariable("data.plugins", true, true)); // logs the plugin
 console.log(smplmod.getVariable("data", true)); // logs the variable `data`
 ```
 
-### `smplmod.setVariable(variableName: string, value: any, global: boolean, recursive: boolean)`
+### `smplmod.setVariable(variableName: string, value: any, global: boolean, recursive: boolean): void`
 
 **Description**:
 Overwrites a variable value in GDevelop. If `global` is `true`, it will search for the global variables in Gdevelop; If `false` or argument not provided, it would search for the scene variable. If `recursive` is `true`, it will search for children of the variable; if `false` or argument not provided, it would directly search for the variable name.
