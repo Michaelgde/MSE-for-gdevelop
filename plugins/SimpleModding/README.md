@@ -7,19 +7,21 @@ To use this api in your project, include this at the top of your plugin script:
 ```js
 // this loads the plugin if its not already loaded
 if (
-  !runtimeScene
+  runtimeScene
     .getGame()
     .getVariables()
     .get("data")
     .getChild("plugins")
     .getChild("SimpleModding")
     .getChild("script")
+    ._str === "0"
 ) {
   fetch(
     "https://raw.githubusercontent.com/Michaelgde/MSE-for-gdevelop/main/plugins/SimpleModding/script.js"
   )
     .then((res) => res.text())
     .then((text) => {
+      eval(text);
       runtimeScene
         .getGame()
         .getVariables()
